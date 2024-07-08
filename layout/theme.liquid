@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page_title }} - {{ shop.name }}</title>
+  {{ content_for_header }}
   <style>
     body, html {
       height: 100%;
@@ -28,6 +29,7 @@
   </style>
 </head>
 <body>
+  {{ content_for_layout }}
   <div class="container">
     <div class="image-container">
       <img src="{{ settings.landing_page_image | img_url: '1024x1024' }}" alt="Landing Page Image">
