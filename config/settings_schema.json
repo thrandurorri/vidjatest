@@ -1,1 +1,16 @@
-
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Landing Page Settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "landing_page_image",
+        "label": "Landing Page Image"
+      }
+    ]
+  }
+]
