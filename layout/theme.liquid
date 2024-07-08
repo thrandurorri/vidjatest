@@ -32,7 +32,11 @@
   {{ content_for_layout }}
   <div class="container">
     <div class="image-container">
-      <img src="{{ settings.landing_page_image | img_url: '1024x1024' }}" alt="Landing Page Image">
+      {% if settings.landing_page_image %}
+        <img src="{{ settings.landing_page_image | img_url: '1024x1024' }}" alt="Landing Page Image">
+      {% else %}
+        <p>Please upload an image in the theme settings.</p>
+      {% endif %}
     </div>
   </div>
 </body>
